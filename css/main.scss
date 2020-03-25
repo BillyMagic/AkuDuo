@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Cinzel&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Gotu&display=swap');
+$fontColor: #FFF9CF;
+$fontSize: 20px;
+
+body, html {
+    margin: 0 auto;
+    font-size: $fontSize;
+    font-family: 'Gotu', sans-serif;
+    color: $fontColor;
+}
+
+body {
+    background-color: rgb(92, 0, 28);
+}
+
+hr {
+    width: 70%;
+    max-width: 500px;
+}
+
+.wrapper {
+    background: url("../img/IMG_9851.svg") no-repeat center -30px fixed;
+    background-size: cover;
+
+    main {
+        height: 650px;
+
+        header {
+            display: flex;
+            width: calc(100% - 2em);
+            padding: 1em;
+            justify-content: center;
+            z-index: 2;
+    
+            ul {
+                list-style-type: none;
+                width: 90%;
+                max-width: 700px;
+                margin-top: 10px;
+                display: flex;
+                justify-content: space-around;
+                padding: 0;
+
+                a {
+                    text-decoration: none;
+                    color: $fontColor;
+                }
+
+                a:hover {
+                    transition-duration: 0.1s;
+                    text-shadow: 0 0 2px #FFFFFF;
+                    color: rgb(255, 243, 148);
+                }
+
+                li {
+                    padding-bottom: 1em;
+                }
+            }
+        }
+        
+        .logo {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 25em;
+
+            .fLogo {
+                height: inherit;
+                background: url("../img/fLogo.svg") no-repeat center center;
+                position: absolute;
+                background-size: contain;
+                z-index: 1;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            #titleLogo {
+                text-align: center;
+                z-index: 2;
+                font-family: 'Cinzel', serif;
+                font-size: 6em;
+            }
+
+            .title2Logo {
+                text-align: center;
+                font-family: 'Cinzel', serif;
+                font-size: 1em;
+                margin-bottom: 3.5em;
+
+            }
+        }
+        
+        .logo:hover {
+            cursor: default;
+        }
+
+    }
+
+    .about {
+        width: 100%;
+        height: 620px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        p {
+            padding: 50px;
+            width: 380px;
+            min-width: 380px;
+            text-align: center;
+        }
+    }
+
+    .gallery {
+        margin: 30px;
+        width: calc(100% - 60px);
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+
+        a {
+            width: 22%;
+            padding: 15px;
+            filter: sepia(0.65);
+            transition: 0.3s;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        a:hover {
+            filter: none;
+        }
+    }
+
+    .offer {
+        margin-top: 10px;
+        width: 100%;
+        height: 620px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+
+        .offerContent {
+            text-align: center;
+            margin-bottom: 40px;;
+
+            h1 {
+                font-size: 1.5em;
+                font-weight: normal;
+                margin-bottom: 40px;
+            }
+
+            h2 {
+                font-size: 1.2em;
+                font-weight: normal;
+            }
+        }
+    }
+
+    .contact {
+        width: calc(100% - 80px);
+        height: 150px;
+        display: flex;
+        background-image: linear-gradient(to right, rgba(139, 0, 42, 0.822), rgb(105, 0, 32));
+        padding: 10px 40px;
+        justify-content: space-around;
+        align-items: center;
+
+        .contactData {
+
+            .phone {
+                color: $fontColor;
+                padding-left: 110px;
+                display: flex;
+                text-decoration: none;
+                background: url(../img/icons8-phone-100.svg) no-repeat;
+                background-size: 30px;
+                background-position: 0 10px;
+                margin-bottom: 5px;
+            }
+
+            .mail {
+                color: $fontColor;
+                padding-left: 40px;
+                display: flex;
+                text-decoration: none;
+                background: url(../img/icons8-email-100.svg) no-repeat;
+                background-size: 30px;
+
+            }
+        }
+
+        .logoWrap {
+            width: 100px;
+            height: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        
+            #FB {
+                background: url(../img/icons8-facebook-250.svg) no-repeat;
+                background-size: 40px;
+                width: 40px;
+                height: 40px;
+            }
+
+            #YT {
+                background: url(../img/icons8-youtube-128.svg) no-repeat;
+                background-size: 40px;
+                width: 40px;
+                height: 40px;
+            }
+        }
+    }
+}

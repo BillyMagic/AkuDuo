@@ -1,0 +1,284 @@
+@import url("https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Cinzel&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Gotu&display=swap");
+body, html {
+  margin: 0 auto;
+  font-size: 20px;
+  font-family: 'Gotu', sans-serif;
+  color: #FFF9CF;
+}
+
+body {
+  background-color: #5c001c;
+}
+
+hr {
+  width: 70%;
+  max-width: 500px;
+}
+
+.wrapper {
+  background: url("../img/IMG_9851.svg") no-repeat center -30px fixed;
+  background-size: cover;
+}
+
+.wrapper main {
+  height: 650px;
+}
+
+.wrapper main header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: calc(100% - 2em);
+  padding: 1em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 2;
+}
+
+.wrapper main header ul {
+  list-style-type: none;
+  width: 90%;
+  max-width: 700px;
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 0;
+}
+
+.wrapper main header ul a {
+  text-decoration: none;
+  color: #FFF9CF;
+}
+
+.wrapper main header ul a:hover {
+  -webkit-transition-duration: 0.1s;
+          transition-duration: 0.1s;
+  text-shadow: 0 0 2px #FFFFFF;
+  color: #fff394;
+}
+
+.wrapper main header ul li {
+  padding-bottom: 1em;
+}
+
+.wrapper main .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 25em;
+}
+
+.wrapper main .logo .fLogo {
+  height: inherit;
+  background: url("../img/fLogo.svg") no-repeat center center;
+  position: absolute;
+  background-size: contain;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wrapper main .logo #titleLogo {
+  text-align: center;
+  z-index: 2;
+  font-family: 'Cinzel', serif;
+  font-size: 6em;
+}
+
+.wrapper main .logo .title2Logo {
+  text-align: center;
+  font-family: 'Cinzel', serif;
+  font-size: 1em;
+  margin-bottom: 3.5em;
+}
+
+.wrapper main .logo:hover {
+  cursor: default;
+}
+
+.wrapper .about {
+  width: 100%;
+  height: 620px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.wrapper .about p {
+  padding: 50px;
+  width: 380px;
+  min-width: 380px;
+  text-align: center;
+}
+
+.wrapper .gallery {
+  margin: 30px;
+  width: calc(100% - 60px);
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.wrapper .gallery a {
+  width: 22%;
+  padding: 15px;
+  -webkit-filter: sepia(0.65);
+          filter: sepia(0.65);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.wrapper .gallery a img {
+  width: 100%;
+}
+
+.wrapper .gallery a:hover {
+  -webkit-filter: none;
+          filter: none;
+}
+
+.wrapper .offer {
+  margin-top: 10px;
+  width: 100%;
+  height: 620px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.wrapper .offer .offerContent {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.wrapper .offer .offerContent h1 {
+  font-size: 1.5em;
+  font-weight: normal;
+  margin-bottom: 40px;
+}
+
+.wrapper .offer .offerContent h2 {
+  font-size: 1.2em;
+  font-weight: normal;
+}
+
+.wrapper .contact {
+  width: calc(100% - 80px);
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(139, 0, 42, 0.822)), to(#690020));
+  background-image: linear-gradient(to right, rgba(139, 0, 42, 0.822), #690020);
+  padding: 10px 40px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper .contact .contactData .phone {
+  color: #FFF9CF;
+  padding-left: 110px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  background: url(../img/icons8-phone-100.svg) no-repeat;
+  background-size: 30px;
+  background-position: 0 10px;
+  margin-bottom: 5px;
+}
+
+.wrapper .contact .contactData .mail {
+  color: #FFF9CF;
+  padding-left: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  background: url(../img/icons8-email-100.svg) no-repeat;
+  background-size: 30px;
+}
+
+.wrapper .contact .logoWrap {
+  width: 100px;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper .contact .logoWrap #FB {
+  background: url(../img/icons8-facebook-250.svg) no-repeat;
+  background-size: 40px;
+  width: 40px;
+  height: 40px;
+}
+
+.wrapper .contact .logoWrap #YT {
+  background: url(../img/icons8-youtube-128.svg) no-repeat;
+  background-size: 40px;
+  width: 40px;
+  height: 40px;
+}
+/*# sourceMappingURL=main.css.map */
