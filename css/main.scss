@@ -69,7 +69,7 @@ hr {
 
             .fLogo {
                 height: inherit;
-                background: url("../img/fLogo.svg") no-repeat center center;
+                background: url("img/fLogo.svg") no-repeat center center;
                 position: absolute;
                 background-size: contain;
                 z-index: 1;
@@ -166,40 +166,54 @@ hr {
         }
     }
 
+    //Email icon icon by Icons8
     .contact {
         width: calc(100% - 80px);
         height: 150px;
         display: flex;
         background-image: linear-gradient(to right, rgba(139, 0, 42, 0.822), rgb(105, 0, 32));
         padding: 10px 40px;
-        justify-content: space-around;
+        justify-content: center;
         align-items: center;
 
         .contactData {
+            height: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
 
             .phone {
+                height: 40px;
+                width: 330px;
                 color: $fontColor;
-                padding-left: 110px;
+                background: url(../img/icons8-phone2-100.png) no-repeat;
+                background-size: 40px;
                 display: flex;
-                text-decoration: none;
-                background: url(../img/icons8-phone-100.svg) no-repeat;
-                background-size: 30px;
-                background-position: 0 10px;
-                margin-bottom: 5px;
+                align-items: center;
+
+                p {
+                    padding-left: 60px;
+                }
             }
 
             .mail {
+                height: 40px;
+                width: 330px;
                 color: $fontColor;
-                padding-left: 40px;
+                background: url(../img/icons8-email2-100.png) no-repeat;
+                background-size: 40px;
                 display: flex;
-                text-decoration: none;
-                background: url(../img/icons8-email-100.svg) no-repeat;
-                background-size: 30px;
+                align-items: center;
 
+                p {
+                    padding-left: 60px;
+                }
             }
         }
 
         .logoWrap {
+            margin-left: 40px;
             width: 100px;
             height: 100px;
             display: flex;
@@ -210,14 +224,19 @@ hr {
             #FB {
                 background: url(../img/icons8-facebook-250.svg) no-repeat;
                 background-size: 40px;
-                width: 40px;
+                width: 50px;
                 height: 40px;
+            }
+
+            #FB:hover {
+                opacity: 0.4;
+                transition-duration: 1s;
             }
 
             #YT {
                 background: url(../img/icons8-youtube-128.svg) no-repeat;
                 background-size: 40px;
-                width: 40px;
+                width: 50px;
                 height: 40px;
             }
         }
