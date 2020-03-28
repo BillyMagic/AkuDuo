@@ -21,7 +21,7 @@ hr {
 }
 
 .wrapper {
-    background: url(/img/IMG_9851.svg) no-repeat center -30px fixed;
+    background: url("/img/IMG_9851.svg") no-repeat center -30px fixed;
     background-size: cover;
 
     main {
@@ -66,7 +66,7 @@ hr {
 
             .fLogo {
                 height: inherit;
-                background: url(/img/fLogo.svg) no-repeat center center;
+                background: url("/img/fLogo.svg") no-repeat center center;
                 position: absolute;
                 background-size: contain;
                 z-index: 1;
@@ -184,7 +184,7 @@ hr {
                 height: 40px;
                 width: 330px;
                 color: $fontColor;
-                background: url(/img/icons8-phone2-100.png) no-repeat;
+                background: url("/img/icons8-phone2-100.png") no-repeat;
                 background-size: 40px;
                 display: flex;
                 align-items: center;
@@ -198,7 +198,7 @@ hr {
                 height: 40px;
                 width: 330px;
                 color: $fontColor;
-                background: url(/img/icons8-email2-100.png) no-repeat;
+                background: url("/img/icons8-email2-100.png") no-repeat;
                 background-size: 40px;
                 display: flex;
                 align-items: center;
@@ -219,7 +219,7 @@ hr {
             align-items: center;
         
             #FB {
-                background: url(/img/icons8-facebook-250.svg) no-repeat;
+                background: url("/img/icons8-facebook-250.svg") no-repeat;
                 background-size: 40px;
                 width: 50px;
                 height: 40px;
@@ -231,7 +231,7 @@ hr {
             }
 
             #YT {
-                background: url(/img/icons8-youtube-128.svg) no-repeat;
+                background: url("/img/icons8-youtube-128.svg") no-repeat;
                 background-size: 40px;
                 width: 50px;
                 height: 40px;
@@ -247,7 +247,7 @@ hr {
 
 @media only screen and (min-width: 481px) and (max-width: 1155px) {
     .wrapper {
-        background: url(/img/IMG_9851.svg) no-repeat center center fixed;
+        background: url("/img/IMG_9851.svg") no-repeat center center fixed;
         background-size: cover;
 
         main {
@@ -271,7 +271,7 @@ hr {
 
 @media only screen and (max-width: 480px) {
     .wrapper {
-        background: url(/img/IMG_9851.svg) no-repeat center center fixed;
+        background: url("/img/IMG_9851.svg") no-repeat center center fixed;
         background-size: cover;
 
         main {
