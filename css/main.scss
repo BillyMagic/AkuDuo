@@ -9,6 +9,7 @@ body, html {
     font-size: $fontSize;
     font-family: 'Gotu', sans-serif;
     color: $fontColor;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -104,10 +105,18 @@ hr {
         align-items: center;
         flex-direction: column;
 
+        #about {
+            background-image: linear-gradient(to right, rgba(139, 0, 42, 0.548), rgba(105, 0, 32, 0.8));
+            border: 1px thick $fontColor; 
+            border-radius: 15px;
+            padding: 10px;
+        }
+
         p {
-            width: 380px;
+            width: 400px;
             text-align: center;
         }
+       
     }
 
     .galleryHr {
@@ -141,6 +150,15 @@ hr {
         }
     }
 
+    .video {
+        margin: 30px;
+        width: calc(100% - 60px);
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        margin-top: 50px;
+    }
+
     .offer {
         margin-top: 100px;
         margin-bottom: 100px;
@@ -171,7 +189,7 @@ hr {
     //Email icon icon by Icons8
     .contact {
         width: calc(100% - 80px);
-        height: 150px;
+        height: calc(100% + 40px);
         display: flex;
         background-image: linear-gradient(to right, rgba(139, 0, 42, 0.822), rgb(105, 0, 32));
         padding: 10px 40px;
@@ -215,11 +233,10 @@ hr {
         }
 
         .logoWrap {
-            margin-left: 40px;
-            width: 100px;
+            margin-left: 50px;
             height: 100px;
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             justify-content: space-around;
             align-items: center;
         
@@ -240,6 +257,7 @@ hr {
                 background-size: 40px;
                 width: 50px;
                 height: 40px;
+                margin-left: 15px;
             }
 
             #YT:hover {
@@ -247,6 +265,29 @@ hr {
                 transform: scale(1.1);
             }
         }
+
+        // form {
+        //     border-left: 1px solid black;
+        //     padding-left: 30px;
+        //     margin-left: 20px;
+        //     width: 40%;
+
+        //     p {
+        //         margin-bottom: 10px;
+        //     }
+            
+        //     .formRow {
+
+        //         input {
+        //             width: 80%;
+        //             height: 20px;
+        //             border: 1px solid black;
+        //             border-radius: 3px;
+        //             font-family: inherit;
+        //             letter-spacing: 0.1em;
+        //         }
+        //     }
+        // }
     }
 }
 
