@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Cinzel&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Gotu&display=swap");
 body, html {
+  height: 100%;
   margin: 0 auto;
   font-size: 20px;
   font-family: 'Gotu', sans-serif;
