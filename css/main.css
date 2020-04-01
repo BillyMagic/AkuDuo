@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css?family=Gotu&display=swap");
 body, html {
   height: 100%;
-  margin: 0 auto;
+  margin: 0;
   font-size: 20px;
   font-family: 'Gotu', sans-serif;
   color: #FFF9CF;
@@ -80,11 +80,11 @@ hr {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: calc(100% - 170px);
+  height: 500px;
 }
 
 .wrapper main .logo .fLogo {
-  height: inherit;
+  height: 500px;
   background: url(../img/fLogo.svg) no-repeat center center;
   position: absolute;
   background-size: contain;
@@ -111,8 +111,8 @@ hr {
 .wrapper main .logo .title2Logo {
   text-align: center;
   font-family: 'Cinzel', serif;
-  font-size: 1em;
-  margin-bottom: 70px;
+  font-size: 1.5em;
+  margin-bottom: 65px;
 }
 
 .wrapper main .logo:hover {
@@ -207,7 +207,7 @@ hr {
   margin-top: 100px;
   margin-bottom: 100px;
   width: 100%;
-  height: calc(100vh - 150px);
+  height: calc(100% - 150px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -357,7 +357,7 @@ hr {
     background-size: cover;
   }
   .wrapper main {
-    height: 100vh;
+    height: 820px;
   }
   .wrapper main .logo {
     zoom: 0.9;
@@ -378,12 +378,13 @@ hr {
     background-size: cover;
   }
   .wrapper main {
-    height: 100vh;
+    height: 820px;
   }
   .wrapper main a {
     padding: 4px;
   }
   .wrapper main .logo {
+    height: 1000px;
     zoom: 0.6;
     -moz-transform: scale(0.6);
   }
