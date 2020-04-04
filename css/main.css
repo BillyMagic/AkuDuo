@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Cinzel&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Gotu&display=swap");
 body, html {
@@ -16,7 +15,8 @@ body {
 
 hr {
   width: 70%;
-  max-width: 500px;
+  max-width: 580px;
+  border-top: 1px solid #FFF9CF;
 }
 
 .wrapper {
@@ -32,26 +32,30 @@ hr {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: calc(100% - 40px);
-  padding: 20px;
+  height: 70px;
+  width: 100%;
+  position: fixed;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   z-index: 2;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#180000), color-stop(rgba(68, 0, 19, 0.99)), color-stop(rgba(105, 0, 30, 0.4)), to(rgba(105, 0, 30, 0.01)));
+  background-image: linear-gradient(to bottom, #180000, rgba(68, 0, 19, 0.99), rgba(105, 0, 30, 0.4), rgba(105, 0, 30, 0.01));
 }
 
 .wrapper main header ul {
   list-style-type: none;
   width: 90%;
   max-width: 700px;
-  margin-top: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   padding: 0;
-  padding-bottom: 10px;
 }
 
 .wrapper main header ul a {
@@ -81,6 +85,7 @@ hr {
       -ms-flex-align: center;
           align-items: center;
   height: 500px;
+  padding-top: 100px;
 }
 
 .wrapper main .logo .fLogo {
@@ -128,28 +133,20 @@ hr {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.wrapper .about #about {
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(139, 0, 42, 0.548)), to(rgba(105, 0, 32, 0.8)));
-  background-image: linear-gradient(to right, rgba(139, 0, 42, 0.548), rgba(105, 0, 32, 0.8));
-  border: 1px thick #FFF9CF;
-  border-radius: 15px;
-  padding: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 80px;
 }
 
 .wrapper .about p {
-  width: 400px;
+  width: 500px;
   text-align: center;
-}
-
-.wrapper .galleryHr {
-  width: 80%;
-  display: block;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(139, 0, 42, 0.548)), to(rgba(105, 0, 32, 0.8)));
+  background-image: linear-gradient(to right, rgba(139, 0, 42, 0.548), rgba(105, 0, 32, 0.8));
+  border: 0.5px solid #FFF9CF;
+  border-radius: 15px;
+  padding: 10px;
 }
 
 .wrapper .gallery {
@@ -393,8 +390,9 @@ hr {
     margin-bottom: 30%;
   }
   .wrapper .about p {
-    zoom: 0.8;
-    -moz-transform: scale(0.8);
+    width: 400px;
+    zoom: 0.7;
+    -moz-transform: scale(0.7);
   }
   .wrapper .gallery a {
     width: 40%;

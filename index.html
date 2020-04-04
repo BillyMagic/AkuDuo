@@ -12,24 +12,25 @@
 
     <body>
         <div class="wrapper">
-            <div class="wall"></div>
-            <main>
-                <header>
+            <main id="start">
+                <header id="header">
                     <ul>
+                        <a href="#start"><li>Start</li></a>
                         <a href="#about"><li>O nas</li></a>
                         <a href="#gallery"><li>Galeria</li></a>
-                        <a href="#offer"><li>Oferta</li></a>
                         <a href="#contact"><li>Kontakt</li></a>
                     </ul>
                 </header>
                 <div class="logo">
-                    <div class="fLogo"><div id="titleLogo">AkuDuo</div>
-                    <div class="title2Logo">Nastrojowa oprawa muzyczna</div></div>
+                    <div class="fLogo">
+                        <div id="titleLogo">AkuDuo</div>
+                        <div class="title2Logo">Nastrojowa oprawa muzyczna</div>
+                    </div>
                 </div>
             </main>
 
-            <section class="about">
-                <div id="about">
+            <section class="about" id="about">
+                <div>
                     <p><strong>AkuDuo</strong> to duet tworzony przez Agnieszkę 
                     (wokal) i Maćka (gitara) – młodych 
                     muzyków, którzy od dłuższego czasu 
@@ -44,7 +45,7 @@
                 </div>
             </section>
 
-            <hr class="galleryHr" id="gallery">
+            <hr id="gallery">
 
             <section class="video">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/iyGLUGhC0BY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
@@ -62,10 +63,10 @@
                 <a data-lightbox="image-1" href="img/high/IMG_9932.jpg"><img src="img/small/IMG_9932-small.jpg"></a>
             </section>
 
-            <hr class="galleryHr">
+            <hr id="offer">
 
             <section class="offer">
-                <div class="offerContent" id="offer">
+                <div class="offerContent">
                     <h1>Obsługujemy:</h1>
                     <h2>Kameralne koncerty</h2>
                     <h2>Występy plenerowe</h2>
@@ -102,8 +103,10 @@
             </footer>
         </div>
 
-        <script type="text/javascript" src="./script/src/js/lightbox.js"></script>
-        <script type="text/javascript" src="./script/dist/js/lightbox-plus-jquery.js"></script>
+        <script type="text/javascript" src="script/src/js/lightbox.js"></script>
+        <script type="text/javascript" src="script/dist/js/lightbox-plus-jquery.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+        <script type="text/javascript" src="script/mainscript.js"></script>
 
     </body>
 </html>
