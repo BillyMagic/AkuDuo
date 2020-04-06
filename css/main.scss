@@ -13,8 +13,6 @@ body, html {
 }
 
 body {
-    background: url(../img/IMG_9851.svg) no-repeat center -30px fixed;
-    background-size: cover;
     background-color: rgb(92, 0, 28);
 }
 
@@ -30,8 +28,8 @@ hr {
 }
 
 .wrapper {
-    // background: url(../img/IMG_9851.svg) no-repeat center -30px fixed;
-    // background-size: cover;
+    background: url(../img/IMG_9851.svg) no-repeat center -30px fixed;
+    background-size: cover;
     
 
     main {
@@ -303,14 +301,9 @@ hr {
 }
 
 @media only screen and (min-width: 481px) and (max-width: 1155px) {
-    body {
+    .wrapper {
         background: url(../img/IMG_9851.svg) no-repeat center center fixed;
         background-size: cover;
-        background-color: rgb(92, 0, 28);
-    }
-    .wrapper {
-        // background: url(../img/IMG_9851.svg) no-repeat center center fixed;
-        // background-size: cover;
 
         main {
             height: 820px;
@@ -344,13 +337,10 @@ hr {
 @media only screen and (max-width: 480px) {
     body {
         font-size: 0.9em;
-        background: url(../img/IMG_9851.svg) no-repeat center center fixed;
-        background-size: cover;
-        background-color: rgb(92, 0, 28);
     }
     .wrapper {
-        // background: url(../img/IMG_9851.svg) no-repeat center center fixed;
-        // background-size: cover;
+        background: url(../img/IMG_9851.svg) no-repeat center center fixed;
+        background-size: cover;
 
         main {
 
