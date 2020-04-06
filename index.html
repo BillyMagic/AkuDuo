@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>AkuDuo</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link rel="stylesheet" href="css/main.css">
         <link href="./script/src/css/lightbox.css" rel="stylesheet">
     </head>
@@ -40,8 +41,8 @@
                     udział w wielu projektach i nieustannie 
                     poszerzają swoje muzyczne horyzonty.
                     <br>
-                    Ideą AkuDuo jest przekazanie emocji płynących z 
-                    prostych, nastrojowych piosenek, które 
+                    Ideą AkuDuo jest przekazanie emocji płynących 
+                    z prostych, nastrojowych piosenek, które 
                     można usłyszeć w nowej, niebanalnej 
                     interpretacji muzyków.</p>
                 </div>
@@ -79,20 +80,22 @@
             </section>
 
             <footer id="contact" class="contact">
-                <div class="contactData">
-                    <div class="phone" href="#">
-                        <p>515 269 954 &nbsp; &nbsp; 889 304 146</p>
+                <div>
+                    <div class="contactData">
+                        <div class="phone" href="#">
+                            <p>515 269 954 &nbsp; &nbsp; 889 304 146</p>
+                        </div>
+                        <div class="mail" href="#">
+                            <p>akuduo.band@gmail.com</p>
+                        </div>
                     </div>
-                    <div class="mail" href="#">
-                        <p>akuduo.band@gmail.com</p>
+                    <div class="logoWrap">
+                        <a id="FB" href="https://www.facebook.com/AkuDuo/" target="_blank" class="noSelect"></a>
+                        <a id="YT" href="https://www.youtube.com/channel/UC6NiBkfURk8_O9UbucADXYw/videos" target="_blank" class="noSelect"></a>
                     </div>
-                </div>
-                <div class="logoWrap">
-                    <a id="FB" href="https://www.facebook.com/AkuDuo/" target="_blank" class="noSelect"></a>
-                    <a id="YT" href="https://www.youtube.com/channel/UC6NiBkfURk8_O9UbucADXYw/videos" target="_blank" class="noSelect"></a>
                 </div>
                 <!-- <form>
-                    <h2>Napisz do nas</h2>
+                    <p>Napisz do nas</p>
                     <div class="formRow">
                         <input type="text" class="formSm" placeholder=" Imię i nazwisko">
                         <input type="email" class="formSm" placeholder=" Adres email">
@@ -100,8 +103,18 @@
                     <div class="formTextarea">
                         <input type="text" class="formHi" placeholder=" Wiadomość">
                     </div>
-                    <button type="submit">Wyślij</button> 
+                    <button type="button">Wyślij</button> 
                 </form> -->
+                <form>
+                    <p>Napisz do nas</p>
+                    <div class="form-group">
+                      <input type="email" class="form-control" placeholder="Twój adres email">
+                    </div>
+                    <div class="form-group">
+                      <textarea class="form-control" rows="3" placeholder="Wiadomość" ></textarea>
+                    </div>
+                    <button type="button">Wyślij</button>
+                  </form>
             </footer>
         </div>
 
@@ -109,6 +122,8 @@
         <script type="text/javascript" src="script/dist/js/lightbox-plus-jquery.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
         <script type="text/javascript" src="script/mainscript.js"></script>
-
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     </body>
 </html>

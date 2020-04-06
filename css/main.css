@@ -16,7 +16,8 @@ body {
 hr {
   width: 70%;
   max-width: 580px;
-  border-top: 1px solid #FFF9CF;
+  border-top: 0.5px solid #FFF9CF;
+  border-bottom: 0.5px solid #FFF9CF;
 }
 
 .noSelect {
@@ -46,8 +47,8 @@ hr {
       -ms-flex-align: center;
           align-items: center;
   z-index: 2;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#180000), color-stop(rgba(68, 0, 19, 0.99)), color-stop(rgba(105, 0, 30, 0.4)), to(rgba(105, 0, 30, 0.01)));
-  background-image: linear-gradient(to bottom, #180000, rgba(68, 0, 19, 0.99), rgba(105, 0, 30, 0.4), rgba(105, 0, 30, 0.01));
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#180000), color-stop(rgba(68, 0, 19, 0.99)), color-stop(rgba(92, 0, 28, 0.658)), to(rgba(92, 0, 28, 0.05)));
+  background-image: linear-gradient(to bottom, #180000, rgba(68, 0, 19, 0.99), rgba(92, 0, 28, 0.658), rgba(92, 0, 28, 0.05));
 }
 
 .wrapper main header ul {
@@ -65,7 +66,6 @@ hr {
 .wrapper main header ul a {
   text-decoration: none;
   color: #FFF9CF;
-  text-transform: uppercase;
 }
 
 .wrapper main header ul a:hover {
@@ -122,7 +122,7 @@ hr {
   text-align: center;
   font-family: 'Cinzel', serif;
   font-size: 1.5em;
-  margin-bottom: 65px;
+  margin-bottom: 70px;
 }
 
 .wrapper main .logo:hover {
@@ -149,7 +149,7 @@ hr {
 }
 
 .wrapper .about p {
-  width: 500px;
+  width: 480px;
   text-align: center;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(139, 0, 42, 0.548)), to(rgba(105, 0, 32, 0.8)));
   background-image: linear-gradient(to right, rgba(139, 0, 42, 0.548), rgba(105, 0, 32, 0.8));
@@ -242,20 +242,21 @@ hr {
 .wrapper .offer .offerContent h2 {
   font-size: 1.2em;
   font-weight: normal;
+  margin-bottom: 20px;
 }
 
 .wrapper .contact {
-  width: calc(100% - 80px);
-  height: calc(100% + 40px);
+  width: 100%;
+  height: 100%;
+  min-height: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(139, 0, 42, 0.822)), to(#690020));
   background-image: linear-gradient(to right, rgba(139, 0, 42, 0.822), #690020);
-  padding: 10px 40px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  padding: 20px 40px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -314,17 +315,13 @@ hr {
 }
 
 .wrapper .contact .logoWrap {
-  margin-left: 50px;
   height: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -357,6 +354,33 @@ hr {
           transform: scale(1.1);
 }
 
+.wrapper .contact form {
+  width: 40%;
+  min-width: 380px;
+}
+
+.wrapper .contact form p {
+  margin-top: 10px;
+}
+
+.wrapper .contact form input, .wrapper .contact form textarea {
+  font-size: 0.8rem;
+}
+
+.wrapper .contact form button {
+  background-color: black;
+  border-color: black;
+  color: #FFF9CF;
+  border-radius: 7px;
+  width: 80px;
+  height: 40px;
+  float: right;
+}
+
+.wrapper .contact form button:active {
+  font-size: 0.95em;
+}
+
 @media only screen and (min-width: 481px) and (max-width: 1155px) {
   .wrapper {
     background: url(../img/IMG_9851.svg) no-repeat center center fixed;
@@ -372,6 +396,15 @@ hr {
   .wrapper .gallery a {
     -webkit-filter: none;
             filter: none;
+  }
+  .wrapper .contact {
+    zoom: 0.75;
+    -moz-transform: scale(0.75);
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .wrapper .contact .logoWrap {
+    margin-left: 20px;
   }
 }
 
@@ -418,6 +451,8 @@ hr {
   .wrapper .contact {
     zoom: 0.75;
     -moz-transform: scale(0.75);
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .wrapper .contact .logoWrap {
     margin-left: 20px;
