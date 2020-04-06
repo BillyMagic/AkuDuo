@@ -67,12 +67,15 @@ hr {
         }
         
         .logo {
+            margin-left: auto;
+            margin-right: auto;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            width: 80%;
             height: 500px;
-            padding-top: 100px;
+            padding-top: 200px;
 
             .fLogo {
                 height: 500px;
@@ -309,8 +312,8 @@ hr {
             height: 820px;
         
             .logo {
-                zoom: 0.9;
-                -moz-transform: scale(0.9);
+                zoom: 0.8;
+                -moz-transform: scale(0.8);
             }
         }
 
