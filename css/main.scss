@@ -286,7 +286,7 @@ hr {
                 font-size: 0.8rem;
             }
 
-            button {
+            #sendBtn {
                 background-color: black;
                 border-color: black;
                 color: $fontColor;
@@ -296,8 +296,8 @@ hr {
                 float: right;
             }
 
-            button:active {
-                font-size: 0.95em;
+            #sendBtn:active {
+                opacity: 0.7;
             }
         }
     }
@@ -333,7 +333,6 @@ hr {
                 margin-left: 20px;
             }
         }
-        
     }
 }
 

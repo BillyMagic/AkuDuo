@@ -370,7 +370,7 @@ hr {
   font-size: 0.8rem;
 }
 
-.wrapper .contact form button {
+.wrapper .contact form #sendBtn {
   background-color: black;
   border-color: black;
   color: #FFF9CF;
@@ -380,8 +380,8 @@ hr {
   float: right;
 }
 
-.wrapper .contact form button:active {
-  font-size: 0.95em;
+.wrapper .contact form #sendBtn:active {
+  opacity: 0.7;
 }
 
 @media only screen and (min-width: 481px) and (max-width: 1155px) {
