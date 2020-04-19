@@ -9,13 +9,18 @@ body, html {
   scroll-behavior: smooth;
 }
 
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
   background-color: #5c001c;
   display: none;
 }
 
 hr {
-  width: 70%;
+  width: 20%;
   max-width: 580px;
   border-top: 0.5px solid #FFF9CF;
   border-bottom: 0.5px solid #FFF9CF;
@@ -96,7 +101,6 @@ hr {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 80%;
 }
 
 .wrapper main .logo .fLogo {
@@ -141,7 +145,7 @@ hr {
 
 .wrapper .about {
   width: 100%;
-  height: 620px;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -154,13 +158,22 @@ hr {
   margin-top: 40px;
 }
 
+.wrapper .about .aboutText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .wrapper .about p {
-  width: 480px;
+  width: 50%;
   text-align: center;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(139, 0, 42, 0.548)), to(rgba(105, 0, 32, 0.8)));
-  background-image: linear-gradient(to right, rgba(139, 0, 42, 0.548), rgba(105, 0, 32, 0.8));
-  border: 0.5px solid #FFF9CF;
-  border-radius: 15px;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(139, 0, 42, 0)), color-stop(rgba(139, 0, 42, 0.4)), color-stop(rgba(139, 0, 42, 0.7)), color-stop(rgba(139, 0, 42, 0.8)), color-stop(rgba(139, 0, 42, 0.7)), color-stop(rgba(139, 0, 42, 0.4)), to(rgba(105, 0, 32, 0)));
+  background-image: linear-gradient(to right, rgba(139, 0, 42, 0), rgba(139, 0, 42, 0.4), rgba(139, 0, 42, 0.7), rgba(139, 0, 42, 0.8), rgba(139, 0, 42, 0.7), rgba(139, 0, 42, 0.4), rgba(105, 0, 32, 0));
+  border-top: 0.5px solid #FFF9CF;
+  border-bottom: 0.5px solid #FFF9CF;
   padding: 10px;
 }
 
@@ -385,14 +398,16 @@ hr {
   opacity: 0.7;
 }
 
-@media only screen and (min-width: 481px) and (max-width: 961px) {
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
   .wrapper {
     background: url(../img/IMG_9851.svg) no-repeat center center fixed;
     background-size: cover;
   }
   .wrapper main .logo {
-    zoom: 0.8;
-    -moz-transform: scale(0.8);
+    min-width: 300px;
+  }
+  .wrapper .about p {
+    width: 60%;
   }
   .wrapper .gallery a {
     -webkit-filter: none;
