@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", function(event) {
 
     window.addEventListener("load", function(e) {
@@ -10,19 +11,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
         gsap.from(".logo div", {duration: 1, delay: 0.8, opacity: 0, y: 40, ease: Power2.easeOut, stagger: 0.2});
 
         AOS.init();
-
-        // $(document).ready(function() {
-        //     $(window).scroll(function() {
-        //         var positiontop = $(document).scrollTop();
-        //         console.log(positiontop);
-        
-        //         if((positiontop > 400) && (positiontop < 800)) {
-        //             $("#about").addClass('animated zoomIn slow');
-        //         } else {
-        //             $("#about").removeClass('animated zoomIn slow');
-        //         }
-        //     });
-        // })
 
     }, false);
 
