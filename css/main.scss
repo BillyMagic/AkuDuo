@@ -4,12 +4,19 @@ $fontColor: #FFF9CF;
 $fontSize: 20px;
 
 body, html {
+
     height: 100%;
     margin: 0;
     font-size: $fontSize;
     font-family: 'Gotu', sans-serif;
     color: $fontColor;
     scroll-behavior: smooth;
+
+    @supports (-webkit-appearance:none) {
+        .os-android & {
+          min-height: calc(100vh - 56px);
+        }
+      }
 }
 
 *, *:before, *:after {
