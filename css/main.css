@@ -1,18 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Cinzel&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Gotu&display=swap");
 body, html {
-  height: 100%;
+  height: calc(100% + 60);
   margin: 0;
   font-size: 20px;
   font-family: 'Gotu', sans-serif;
   color: #FFF9CF;
   scroll-behavior: smooth;
-}
-
-@supports (-webkit-appearance: none) {
-  .os-android body, .os-android html {
-    min-height: calc(100vh - 56px);
-  }
 }
 
 *, *:before, *:after {
@@ -39,6 +33,12 @@ hr {
 .wrapper {
   background: url(../img/IMG_9851.svg) no-repeat center -30px fixed;
   background-size: cover;
+}
+
+@supports (-webkit-appearance: none) {
+  .os-android .wrapper {
+    min-height: calc(100vh - 56px);
+  }
 }
 
 .wrapper main {
