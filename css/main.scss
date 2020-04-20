@@ -145,6 +145,10 @@ hr {
         }
        
     }
+    #gallery {
+        margin-bottom: 50px;
+        visibility: hidden;
+    }
 
     .gallery {
         margin: 30px;
@@ -160,7 +164,7 @@ hr {
             min-width: 180px;
             margin: 10px;
             filter: sepia(0.65);
-            transition: 0.3s;
+            transition: .4s;
 
             img {
                 width: 100%;
@@ -169,12 +173,12 @@ hr {
 
         a:hover {
             filter: none;
+            transition: .5s;
         }
     }
 
     .video {
         margin: 30px;
-        width: calc(100% - 60px);
         display: flex;
         justify-content: center;
         align-items: flex-start;

@@ -177,6 +177,11 @@ hr {
   padding: 10px;
 }
 
+.wrapper #gallery {
+  margin-bottom: 50px;
+  visibility: hidden;
+}
+
 .wrapper .gallery {
   margin: 30px;
   width: calc(100% - 60px);
@@ -200,8 +205,8 @@ hr {
   margin: 10px;
   -webkit-filter: sepia(0.65);
           filter: sepia(0.65);
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  -webkit-transition: .4s;
+  transition: .4s;
 }
 
 .wrapper .gallery a img {
@@ -211,11 +216,12 @@ hr {
 .wrapper .gallery a:hover {
   -webkit-filter: none;
           filter: none;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 .wrapper .video {
   margin: 30px;
-  width: calc(100% - 60px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
