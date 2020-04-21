@@ -41,14 +41,14 @@ hr {
    
 
     main {
-        height: 100vh;
-        display: flex;
-        justify-content: center;
+        height: 80vh;
+        // justify-content: center;
 
         header {
             display: flex;
             height: 70px;
             width: 100%;
+            box-sizing: border-box;
             position: fixed;
             justify-content: center;
             align-items: center;
@@ -57,11 +57,11 @@ hr {
     
             ul {
                 list-style-type: none;
-                width: 90%;
-                max-width: 700px;
                 display: flex;
                 justify-content: space-around;
                 padding: 0;
+                width: 70%;
+                min-width: 350px;
 
                 a {
                     text-decoration: none;
@@ -77,15 +77,14 @@ hr {
         }
         
         .logo {
+            height: 100vh;
             display: flex;
-            flex-direction: column;
             justify-content: center;
             align-items: center;
 
             .fLogo {
                 height: 500px;
                 background: url(../img/fLogo.svg) no-repeat center center;
-                position: absolute;
                 background-size: contain;
                 z-index: 1;
                 display: flex;
@@ -116,16 +115,16 @@ hr {
 
     #aboutHr {
         opacity: 0;
-        padding-bottom: 20px;
+        // padding-bottom: 20px;
     }
 
     .about {
         width: 100%;
+        box-sizing: border-box;
         height: 100vh;
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-top: 40px;
 
         .aboutText {
             display: flex;
@@ -134,6 +133,7 @@ hr {
 
         p {
             width: 50%;
+            min-width: 360px;
             text-align: center;
             background-image: linear-gradient(to right,
                 rgba(139, 0, 42, 0),
@@ -172,6 +172,7 @@ hr {
 
             img {
                 width: 100%;
+                box-sizing: border-box;
             }
         }
 
@@ -193,6 +194,7 @@ hr {
         margin-top: 100px;
         margin-bottom: 100px;
         width: 100%;
+        box-sizing: border-box;
         height: calc(100% - 150px);
         display: flex;
         justify-content: space-around;
@@ -220,6 +222,7 @@ hr {
     //Email icon icon by Icons8
     .contact {
         width: 100%;
+        box-sizing: border-box;
         height: 100%;
         min-height: 300px;
         display: flex;
@@ -300,7 +303,7 @@ hr {
 
         form {
             width: 40%;
-            min-width: 380px;
+            min-width: 340px;
 
             p {
                 margin-top: 10px;
@@ -327,23 +330,33 @@ hr {
     }
 }
 
-@media only screen and (min-width: 481px) and (max-width: 1024px) {
+@media screen and (min-width : 481px) and (max-width : 1156px) {
     body {
         background: url(../img/IMG_9851.svg) no-repeat center center fixed;
         background-size: cover;
         background-color: rgb(92, 0, 28);
 
         main {
+            height: 100vh;
         
             .logo {
-                zoom: 0.8;
-                -moz-transform: scale(0.8);
+                padding-top: 30px;
                 min-width: 300px;
+                scale: 0.8;
+                // zoom: 0.8;
+                // -moz-transform: scale(0.8);
             }
         }
 
-        .about p {
-                width: 60%;
+        .about {
+            height: 40vh;
+            margin-top: 0;
+
+            p {
+                width: 80%;
+                min-width: 0;
+                box-sizing: border-box;
+            }
         }
 
         .gallery {
@@ -354,8 +367,8 @@ hr {
         }
 
         .contact {
-            zoom: 0.75;
-            -moz-transform: scale(0.75);
+            // zoom: 0.75;
+            // -moz-transform: scale(0.75);
             flex-wrap: wrap;
 
             .logoWrap {
@@ -365,7 +378,7 @@ hr {
     }
 }
 
-@media only screen and (max-width: 480px) {
+@media screen and (max-width: 480px) {
     body {
         font-size: 0.9em;
         background: url(../img/IMG_9851.svg) no-repeat center center fixed;
@@ -379,24 +392,32 @@ hr {
         // background-size: cover;
 
         main {
+            height: 100vh;
 
             a {
                 padding: 4px;
+
+                li {
+                    font-size: 0.9em;
+                }
             }
 
             .logo {
+                height: 100%;
                 zoom: 0.6;
                 -moz-transform: scale(0.6);
             }
         }
+
         #aboutHr {
             margin-bottom: 50px;
         }
+
         .about {
             height: auto;
             margin-bottom: 30%;
+
             p {
-                width: 400px;
                 zoom: 0.8;
                 -moz-transform: scale(0.8);
             }
@@ -418,8 +439,8 @@ hr {
         }
 
         .contact {
-            zoom: 0.75;
-            -moz-transform: scale(0.75);
+            // zoom: 0.75;
+            // -moz-transform: scale(0.75);
             flex-wrap: wrap;
 
             .logoWrap {
