@@ -408,15 +408,16 @@ hr {
     background-color: #5c001c;
   }
   body main {
-    height: 100vh;
+    min-height: 400px;
   }
   body main .logo {
-    padding-top: 30px;
+    padding-top: 20%;
     min-width: 300px;
-    scale: 0.8;
+    zoom: 0.8;
+    -moz-transform: scale(0.8);
   }
   body .about {
-    height: 40vh;
+    height: 40%;
     margin-top: 0;
   }
   body .about p {
