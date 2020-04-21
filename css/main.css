@@ -15,6 +15,8 @@ body, html {
 }
 
 body {
+  background: url(../img/IMG_9851.svg) no-repeat center -30px fixed;
+  background-size: cover;
   background-color: #5c001c;
   display: none;
 }
@@ -28,11 +30,6 @@ hr {
 
 .noSelect {
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-}
-
-.wrapper {
-  background: url(../img/IMG_9851.svg) no-repeat center -30px fixed;
-  background-size: cover;
 }
 
 .wrapper main {
@@ -406,29 +403,30 @@ hr {
 }
 
 @media only screen and (min-width: 481px) and (max-width: 1024px) {
-  .wrapper {
+  body {
     background: url(../img/IMG_9851.svg) no-repeat center center fixed;
     background-size: cover;
+    background-color: #5c001c;
   }
-  .wrapper main .logo {
+  body main .logo {
     zoom: 0.8;
     -moz-transform: scale(0.8);
     min-width: 300px;
   }
-  .wrapper .about p {
+  body .about p {
     width: 60%;
   }
-  .wrapper .gallery a {
+  body .gallery a {
     -webkit-filter: none;
             filter: none;
   }
-  .wrapper .contact {
+  body .contact {
     zoom: 0.75;
     -moz-transform: scale(0.75);
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .wrapper .contact .logoWrap {
+  body .contact .logoWrap {
     margin-left: 20px;
   }
 }
@@ -436,10 +434,10 @@ hr {
 @media only screen and (max-width: 480px) {
   body {
     font-size: 0.9em;
-  }
-  .wrapper {
     background: url(../img/IMG_9851.svg) no-repeat center center fixed;
     background-size: cover;
+    background-color: #5c001c;
+    display: none;
   }
   .wrapper main a {
     padding: 4px;
